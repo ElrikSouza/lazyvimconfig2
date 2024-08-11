@@ -89,11 +89,9 @@ return {
             "typescriptreact",
             "typescript.tsx",
           },
-          settings = {
-            typescript = {
-              preferences = {
-                importModuleSpecifier = "relative",
-              },
+          typescript = {
+            preferences = {
+              importModuleSpecifier = "relative",
             },
           },
         },
