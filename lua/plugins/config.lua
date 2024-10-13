@@ -18,6 +18,13 @@ return {
       window = { position = "right" },
     },
   },
+  { "rose-pine/neovim", name = "rose-pine" },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "rose-pine",
+    },
+  },
   {
     "max397574/better-escape.nvim",
     config = function()
@@ -81,6 +88,13 @@ return {
         vtsls = {
           -- explicitly add default filetypes, so that we can extend
           -- them in related extras
+          settings = {
+            typescript = {
+              preferences = {
+                importModuleSpecifier = "relative",
+              },
+            },
+          },
           filetypes = {
             "javascript",
             "javascriptreact",
